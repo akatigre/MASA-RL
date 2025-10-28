@@ -1,0 +1,19 @@
+hydra:
+  searchpath:
+    - file://verl/trainer/config
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+reward_model:
+  reward_manager: masa_naive
+
+data:
+  meta_cog_data: True
+#   custom_cls:
+#     path: "masa_train/masa_rl_dataset.py"
+#     name: RLHFDataset
+
+trainer:
+  project_name: verl-masa-grpo
