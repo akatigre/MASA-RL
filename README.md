@@ -1,4 +1,7 @@
 ## Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning
+
+### 🎉 Accepted to ICML 2026
+
 ### 📖 [Paper](https://arxiv.org/pdf/2510.03259) | 🤗 [Checkpoints](https://huggingface.co/collections/jadohu/masa)
 
 > #### Authors &emsp;&emsp; [Yoonjeon Kim](https://akatigre.github.io/)<sup>1&#42;</sup>, [Doohyuk Jang](https://jadohu.github.io/)<sup>1&#42;</sup>, [Eunho Yang](https://scholar.google.com/citations?user=UWO1mloAAAAJ&hl=en)<sup><sup>1,2&dagger;</sup> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>1</sup>KAIST, <sup>2</sup>AITRICS</sub> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>&#42;</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding author</sub>
