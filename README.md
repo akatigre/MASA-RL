@@ -1,15 +1,16 @@
-## Meta-Awareness Enhances Reasoning Models: Self-Alignment Reinforcement Learning
+## Verifying Meta-Awareness via Predictive Rewards in Reasoning Models
 
 ### 🎉 Accepted to ICML 2026
 
-### 📖 [Paper](https://arxiv.org/pdf/2510.03259) | 🤗 [Checkpoints](https://huggingface.co/collections/jadohu/masa)
+### 📖 [Paper](https://drive.google.com/file/d/1n3cKn0jOWSnvmLhdUh2AxT3j3nbNnxVi/view?usp=sharing) | 🤗 [Checkpoints](https://huggingface.co/collections/jadohu/masa)
 
 > #### Authors &emsp;&emsp; [Yoonjeon Kim](https://akatigre.github.io/)<sup>1&#42;</sup>, [Doohyuk Jang](https://jadohu.github.io/)<sup>1&#42;</sup>, [Eunho Yang](https://scholar.google.com/citations?user=UWO1mloAAAAJ&hl=en)<sup><sup>1,2&dagger;</sup> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>1</sup>KAIST, <sup>2</sup>AITRICS</sub> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>&#42;</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding author</sub>
 
 <img src="./assets/teaser.png" alt="teaser" style="width:70%;"/>
 
 > #### 🔆 Abstract
-> *Recent studies on reasoning models explore the meta-awareness of language models, the ability to determine `how to think' by itself. We argue that large reasoning models lack this meta-awareness property by proving severe misalignment between true roll-outs and predicted meta information. We hypothesize that the alignment of meta prediction and true roll-outs directly leads to significant performance gain. To verify this hypothesis, we design a training pipeline that boosts ***Meta-Awareness via Self-Alignment (MASA)***. Unlike prior approaches, our method requires no external datasets, auxiliary models, or human-crafted reasoning pipelines but leverages ***self-generated reasoning signals to train meta-awareness***. Meta-awareness enables efficient training through prediction-based gating and cutoff, with behavior cloning on expert meta-trajectories ensuring reliable meta-predictions. The results are inspiring: our strategy yields significant improvements in both accuracy and training efficiency on in-domain tasks and shows strong generalization to out-of-domain benchmarks. More specifically, our method can speed up GRPO training by over 1.28x to reach the same performance, and achieve a 19.3% gain in accuracy on AIME25, and a 6.2% average gain over six mathematics benchmarks. Aided by the enhanced meta-cognitive ability, our approach benefits generalization in out-of-domain benchmarks, gaining an additional 3.87% in GPQA-Diamond, and an overall 2.08% accuracy gain over 13 benchmarks encompassing logical, scientific, and coding domains.*
+> *Recent research on reasoning models explores the meta-awareness of language models, including their ability to determine optimal thinking duration, recognize knowledge boundaries, and structure concept-level thinking. While current large reasoning models depend solely on answer-based verification, we show that adding meta-awareness objectives leads to significant performance gains over models without such meta-knowledge. **MAPR** (Meta-Awareness via
+Predictive Reward)  utilizes a self-generated task of predicting rollout statistics - specifically length, pass-rate, and concepts used - allowing for verification against the actual statistics. Furthermore, by leveraging this self-predictive capability, the model can regulate its reasoning behavior by i) filtering out trivial or unsolvable prompts, ii) reducing lengthy generations that tend to be incorrect, and iii) generating hints relevant to the problem. The results are inspiring: **MAPR** yields significant improvements in both accuracy and training efficiency on various reasoning benchmarks. More specifically, our method can speed up GRPO training by over 1.28$\times$ to reach the same performance, and achieve 83.18% gain in accuracy on AIME25, and a 13.04% average gain over six mathematics benchmarks.*
 ---
 
 ### 🔥 To do
