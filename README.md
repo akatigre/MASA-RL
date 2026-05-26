@@ -6,7 +6,8 @@
 
 > #### Authors &emsp;&emsp; [Yoonjeon Kim](https://akatigre.github.io/)<sup>1&#42;</sup>, [Doohyuk Jang](https://jadohu.github.io/)<sup>1&#42;</sup>, [Eunho Yang](https://scholar.google.com/citations?user=UWO1mloAAAAJ&hl=en)<sup><sup>1,2&dagger;</sup> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>1</sup>KAIST, <sup>2</sup>AITRICS</sub> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>&#42;</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding author</sub>
 
-📄 [Teaser](./assets/MAPR_teaser.pdf) | 🖼️ [Framework Slide](./assets/MAPR_Framework_Slide.pdf)
+<img src="./assets/MAPR_teaser.png" alt="teaser" style="width:95%;"/>
+<img src="./assets/MAPR_Framework_Slide.png" alt="framework slide" style="width:95%;"/>
 
 > #### 🔆 Abstract
 > *Recent research on reasoning models explores the meta-awareness of language models, including their ability to determine optimal thinking duration, recognize knowledge boundaries, and structure concept-level thinking. While current large reasoning models depend solely on answer-based verification, we show that adding meta-awareness objectives leads to significant performance gains over models without such meta-knowledge. **MAPR** (Meta-Awareness via
@@ -15,8 +16,8 @@ Predictive Reward)  utilizes a self-generated task of predicting rollout statist
 
 ### 🔥 To do
 * [x] Integration into VeRL
-* [x] MASA with dapo algorithm
-* [x] ~~Training pipeline of MASA~~
+* [x] MAPR with dapo algorithm
+* [x] ~~Training pipeline of MAPR~~
 * [x] ~~Evaluation on mathematical benchmarks~~
 * [x] ~~Evaluation on logical / scientific / coding benchmarks~~
 
@@ -80,11 +81,11 @@ bash eval.sh <MODEL_NAME> <DOMAIN [math|science|logic|coding]> <NUM_GPUS>
     ```
     This script computes the **pass@k** metrics (e.g., pass@1, pass@5, pass@10) based on your evaluation results.
 
-### 📈 Training Your Own Model with MASA + GRPO algorithm
+### 📈 Training Your Own Model with MAPR + GRPO algorithm
 ```
 wandb login # login to your wandb account
-bash train_masagrpo.sh # To run our MASA with GRPO algotithm
-bash train_grpo.sh # To run baseline GRPO algorithm without MASA
+bash train_masagrpo.sh # To run our MAPR with GRPO algotithm
+bash train_grpo.sh # To run baseline GRPO algorithm without MAPR
 ```
 
 The training configurations (NGPUS, OUTPUT_DIR, BASE_MODEL, BASE_DIR) could be modified in the scripts.
