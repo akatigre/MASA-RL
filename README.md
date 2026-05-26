@@ -6,7 +6,7 @@
 
 > #### Authors &emsp;&emsp; [Yoonjeon Kim](https://akatigre.github.io/)<sup>1&#42;</sup>, [Doohyuk Jang](https://jadohu.github.io/)<sup>1&#42;</sup>, [Eunho Yang](https://scholar.google.com/citations?user=UWO1mloAAAAJ&hl=en)<sup><sup>1,2&dagger;</sup> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>1</sup>KAIST, <sup>2</sup>AITRICS</sub> <br> <sub> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <sup>&#42;</sup>Equal Contribution, <sup>&dagger;</sup>Corresponding author</sub>
 
-<img src="./assets/teaser.png" alt="teaser" style="width:70%;"/>
+📄 [Teaser](./assets/MAPR_teaser.pdf) | 🖼️ [Framework Slide](./assets/MAPR_Framework_Slide.pdf)
 
 > #### 🔆 Abstract
 > *Recent research on reasoning models explores the meta-awareness of language models, including their ability to determine optimal thinking duration, recognize knowledge boundaries, and structure concept-level thinking. While current large reasoning models depend solely on answer-based verification, we show that adding meta-awareness objectives leads to significant performance gains over models without such meta-knowledge. **MAPR** (Meta-Awareness via
